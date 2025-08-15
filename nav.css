@@ -1,0 +1,173 @@
+
+:root {
+    --primary_font: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+    --primary_bg: #0f172a;
+    --primary_bg_light: #1b2335;
+    --primary_light_icon: #252f45;
+    --dark_light: #c2bad2;
+    --icon_hover: #283a69;
+    --skills_gradient_bg: linear-gradient(261deg, #1f2739 5.73%, rgba(23, 38, 71, .98) 93.52%);
+    --skills_stroke: #0f172a;
+    --skills_text_color: #56b6d4;
+    --skills_gradient: linear-gradient(277deg, #2454fe 1.72%, #34cf8e 98.88%);
+    --black_border: #292929;
+    --green: #249a83;
+    --white: #fff;
+    --black: #000;
+    --hyperLink: #4c72f8;
+    --workHover: rgba(40, 58, 105, .9);
+    --mouseEffects: radial-gradient(circle, rgba(10, 0, 147, 0.55) 0%, rgba(22, 16, 131, 0) 70%);
+    --primary_darklight_text: #7778a4;
+    --Title-Gradient: linear-gradient(90deg, #239982 -1.88%, #6d64d3 104.56%);
+    --logo_gradient: linear-gradient(90deg, #39e168 -1.88%, #6d64d3 104.56%);
+}
+*{
+    margin: 0;
+}
+body{
+    background-color: var(--primary_bg);
+    transition: background-color 0.3s, color 0.3s;
+}
+.container {
+    display: flex;
+}
+
+.logo{
+    margin-inline-start: 5%;
+}
+.container > div{
+    font-size: 20px;
+    font-family: var(--primary_font);
+    color: var(--primary_darklight_text);
+}
+#main-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+#main-header.scrolled{
+    backdrop-filter: blur(5px) saturate(172%);
+    -webkit-backdrop-filter: blur(5px) saturate(172%);
+    background-color: rgba(3, 4, 5, 0.53);
+}
+.name{
+    margin-right: -20px;
+    margin-top: 17px;
+    font-weight: 900;
+    background: #239982;
+    background: linear-gradient(90deg, rgba(35, 153, 130, 1) 0%, rgba(109, 100, 211, 1) 15%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    flex-basis: 50%;
+}
+.home{
+    margin-top: 17px;
+    flex-basis: 10%;
+}
+.about{
+    margin-top: 17px;
+    flex-basis: 10%;
+}
+.skills{
+    margin-top: 17px;
+    flex-basis: 10%;
+}
+.Resume{
+    margin-top: 17px;
+    flex-basis: 10%;
+}
+.Resume > a{
+    color: var(--primary_darklight_text);
+    text-decoration: none;
+}
+.Home{
+    margin-top: 17px;
+    flex-basis: 5%;
+}
+.Home_page_padding{
+    margin-top: 10%;
+    margin-inline-start: 10%;
+}
+.title > span{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--primary_font);
+    color: var(--green);
+}
+.title > h1{
+    font-size: 100px;
+    font-family: sans-serif;
+    color: var(--primary_darklight_text);
+}
+.title p{
+    font-size: 20px;
+    font-family: var(--primary_font);
+    width: 55%;
+    color: var(--primary_darklight_text);
+}
+.title > h6{
+    margin-top: 14%;
+    font-size: 100px;
+    font-family: var(--primary_font);
+    color: #c2bad214;
+    text-align: end;
+}
+.hover-btn {
+    color: var(--primary_darklight_text);
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--primary_font);
+}
+.clickBtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.about_me h1{
+    line-height: 95px;
+    text-align: center;
+    font-size: 70px;
+    font-family: var(--primary_font);
+    color: var(--primary_darklight_text);
+}
+.about_me p{
+    line-height: 25px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: var(--primary_font);
+    width: 70%;
+    color: var(--primary_darklight_text);
+}
+.dark-mode{
+    background-color: var(--dark_light);
+}
+.dark-mode h6{
+    color: #1b23351f;
+
+}
+.dark-mode h1{
+    color: var(--primary_bg);
+}
+.dark-mode span{
+    color: var(--hyperLink);
+}
+.dark-mode p{
+    color: var(--icon_hover);
+}
+.dark-mode container{
+    background-color: var(--dark_light);
+    color: var(--black);
+}
+.dark-mode button{
+    color: var(--primary_bg);
+}
+.light-mode container{
+    color: var(--black);
+}
+.about_me{
+    margin-top: 10%;
+    margin-inline-start: 10%;
+}
