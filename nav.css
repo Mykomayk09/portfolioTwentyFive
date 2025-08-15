@@ -15,7 +15,7 @@
     --white: #fff;
     --black: #000;
     --hyperLink: #4c72f8;
-    --workHover: rgba(40, 58, 105, .9);
+    --workHover: #283a69e6;
     --mouseEffects: radial-gradient(circle, rgba(10, 0, 147, 0.55) 0%, rgba(22, 16, 131, 0) 70%);
     --primary_darklight_text: #7778a4;
     --Title-Gradient: linear-gradient(90deg, #239982 -1.88%, #6d64d3 104.56%);
@@ -142,6 +142,13 @@ body{
     color: var(--primary_darklight_text);
 }
 .dark-mode{
+    color: #7778a4;
+}
+.light-mode{
+    lighting-color: #283a69e6;
+}
+
+/**.dark-mode{
     background-color: var(--dark_light);
 }
 .dark-mode h6{
@@ -159,14 +166,14 @@ body{
 }
 .dark-mode container{
     background-color: var(--dark_light);
-    color: var(--black);
 }
 .dark-mode button{
     color: var(--primary_bg);
 }
 .light-mode container{
-    color: var(--black);
+    color:#0f172a;
 }
+    **/
 .about_me{
     margin-top: 10%;
     margin-inline-start: 10%;

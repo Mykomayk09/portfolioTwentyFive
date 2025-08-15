@@ -9,16 +9,25 @@ const toggleBtn = document.getElementById('toggle')
 
 
 //hovering the header section
-function addHoverEffect(element, hoverColor, defaultColor) {
-    element.addEventListener("mouseover", () => {
+function addHoverEffect(element, hoverColor, secondaryColor, defaultColor,defaultColor1) {
+    if(document.body.classList.toggle('dark-mode')){
+        element.addEventListener("mouseover", () => {
         element.style.color = hoverColor;
     });
     element.addEventListener("mouseout", () => {
         element.style.color = defaultColor;
     });
+    }else if(document.body.classList.toggle('light-mode')){
+        element.addEventListener("mouseover", () => {
+        element.style.color = secondaryColor;
+    });
+        element.addEventListener("mouseout", () => {
+        element.style.color = defaultColor1;
+    });
+    }
 }
 document.querySelectorAll(".hover-btn").forEach(btn => {
-   addHoverEffect(btn, "#4c72f8", "#7778a4");
+   addHoverEffect(btn, "#4c72f8", "#0f172a", "#7778a4","#283a69e6");
 });
 
 //transparent header when its scrolled down
