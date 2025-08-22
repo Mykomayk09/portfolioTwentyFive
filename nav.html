@@ -14,32 +14,117 @@
 <body>
     <header id="main-header">
         <nav class="container">
-            <div class="logo"> <img src="img/logo1.png" width="50px" alt=""></div>
+            <div class="logo"> <a href="#home_section"><img src="img/logo1.png" width="50px" alt=""></a></div>
             <div class="name"></div>
-            <div class="home"><button id="home" class="hover-btn">HOME</button></div>
+            <div class="home"><a href="#home_section"><button id="home" class="hover-btn">HOME</button></a></div>
             <div class="about"><button id="about" class="hover-btn">ABOUT</button></div>
             <div class="skills"><button id="skills" class="hover-btn">SKILLS</button></div>
-            <div class="Resume"><a href="">RESUME</a></div>
+            <div class="Resume"><a href=""><button id="resume" class="hover-btn">RESUME</div></button></a>
             <button id="toggle" class="clickBtn"><i class="fa-regular fa-sun"></i></button>
         </nav>
 
-        <!-- NEXT BUILD: put links and animation when you drag the home button-->
     </header>
+    <section id="#home_section" >
     <div class="Home_page_padding">
-            <div class="title">
-                <span>Hi there, I am</span>
-                <h1>Maico Kristel</h1>
-                <p>I’m an aspiring frontend developer skilled in HTML, CSS, and JavaScript. I enjoy turning UI ideas into polished, accessible interfaces and learning modern frameworks like React.</p>
-                <h6>maykomayk</h6>
-                <!--<div class="photo"><img src="assets/coding-html-svgrepo-com.png" alt="code"></div>-->
-            </div>
+        <div class="title">
+            <span>Frontend Developer</span>
+            <h1>I build clean, accessible, and responsive web interfaces.</h1>
+            <p>I’m an aspiring frontend developer skilled in HTML, CSS, and JavaScript. I enjoy turning UI ideas into polished, accessible interfaces and learning modern frameworks like React.</p>
+            <h6>maykomayk._</h6>
+            <!--<div class="photo"><img src="assets/coding-html-svgrepo-com.png" alt="code"></div>-->
         </div>
+    </div>
+    <div class="lang_container">
+        <article>
+            <pre><code class="language-js">
+function createCard(title, description) {
+    return `
+        &lt;div class="card"&gt;
+        &lt;h2&gt;${title}&lt;/h2&gt;
+        &lt;p&gt;${description}&lt;/p&gt;
+        &lt;/div&gt;
+    `;
+    }
+
+document.body.innerHTML = createCard("Hello, User!", 
+"Welcome to my Web Portfolio!");
+            </code></pre>
+        </article>
+    </div>
+</section>
     <section>
         <div class="about_me">
-            <h1>About Me</h1>
-            <p>I'm an aspiring frontend developer with a passion for creating clean, responsive, and user-friendly web experiences. I have strong skills in HTML, CSS, and foundational JavaScript, and I’m currently expanding my knowledge in React.js. My background in IT support has equipped me with problem-solving skills, attention to detail, and the ability to troubleshoot both technical and design issues. I enjoy turning ideas into interactive and visually appealing websites while continuously learning new tools and technologies to improve my craft.</p>
+            <h2>About Me</h2>
+            <p>Hello, I'm <span> Maico Kristel Candol </span> an aspiring frontend developer with a passion for creating <i>clean</i>, 
+                <i>responsive</i>, and <i>user-friendly</i> web experiences. 
+                I have strong skills in <span>HTML</span>, <span>CSS</span>, and foundational <span>JavaScript</span>, 
+                and I’m currently expanding my knowledge in <span>React.js</span>.
+                My background in IT support has equipped me with <b>problem-solving skills</b>, <b>attention to detail</b>, and the ability to <b>troubleshoot</b> both technical and design issues. 
+                I enjoy turning ideas into interactive and visually appealing websites while continuously learning new tools and technologies to improve my craft.</p>
         </div>
-    </section>    
+    </section> 
+    <section>
+        <div class="skills1">
+            <h2>Skills</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ducimus culpa numquam voluptas animi non rerum quae doloribus ex neque! Animi consequuntur, natus odit eaque eos sed autem alias eum!</p>
+            <div class="grid">
+                <div class="badge" data-tooltip="HTML – Markup language for structuring web pages."><i class="fa-brands fa-html5"></i>
+                    <h5>HTML</h5>
+                </div>
+                <div class="badge" data-tooltip="CSS – Styling and layout."><i class="fa-brands fa-css3"></i>
+                    <h5>CSS</h5>
+                </div>
+                <div class="badge" data-tooltip="JavaScript – Programming language for interactivity."><i class="fa-brands fa-square-js"></i>
+                    <h5>JAVASCRIPT</h5>
+                </div>
+                <div class="badge" data-tooltip="Responsive Design – Optimized for all screen sizes."><i class="fa-solid fa-object-group"></i>
+                    <h5>RESPONSIVE DESIGN</h5>
+                </div>
+                <div class="badge" data-tooltip="Microsoft Office Suite."><i class="fa-solid fa-file-word"></i>
+                    <h5>MS OFFICE</h5>
+                </div>
+                <div class="badge" data-tooltip="General computer literacy and troubleshooting."><i class="fa-solid fa-network-wired"></i>
+                    <h5>COMPUTER LITERATE</h5>
+                </div>
+                <div class="badge" data-tooltip="GitHub – Version control and collaboration."><i class="fa-brands fa-github"></i>
+                    <h5>GITHUB</h5>
+                </div>
+                <div class="badge" data-tooltip="Git – Version control system."><i class="fa-brands fa-git-alt"></i>
+                    <h5>GIT</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="projects">
+                <h2>Projects</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ducimus culpa numquam voluptas animi non rerum quae doloribus ex neque! Animi consequuntur, natus odit eaque eos sed autem alias eum!</p>
+            <div class="grid1">
+                <div class="proj">
+                    <span>Portfolio</span>
+                    <p>A responsive todo app with localStorage and drag-and-drop ordering.</p>
+                </div>
+                <div class="proj">
+                    <span>Password Generator</span>
+                    <p>A responsive todo app with localStorage and drag-and-drop ordering.</p>
+                </div>
+                <div class="proj">
+                    <span>Task App</span>
+                    <p>A responsive todo app with localStorage and drag-and-drop ordering.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Get in Touch</h2>
+        <p>I’m open to junior frontend roles, freelance projects, and collaboration. Send a message and I’ll reply as soon as I can.</p>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-js.min.js"></script>
+
 </body>
+<footer>
+    <p>@Copyright</p>
+</footer>
 <script src="script.js"></script>
 </html>
