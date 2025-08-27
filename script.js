@@ -29,7 +29,7 @@ document.getElementById('year').textContent = currentYear;
 
 function initClient() {
     gapi.client.init({
-      apiKey: "YOUR_API_KEY",
+      apiKey: "AIzaSyAISryoRSMtZeiez31VDLJWdD26q62kJmA",
       clientId: "348033447317-08j2grfjtpfokp6vpehtsj63gae4nq29.apps.googleusercontent.com",
       scope: "https://www.googleapis.com/auth/gmail.send",
       discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"]
@@ -64,4 +64,5 @@ function initClient() {
 //hamburger icon
 //if(window.resizeTo < 768){
 //element.classList.display=""}
+
 //hover underline in every title of section
