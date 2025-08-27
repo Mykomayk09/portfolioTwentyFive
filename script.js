@@ -36,6 +36,10 @@ document.getElementById('year').textContent = currentYear;
     emailjs.sendForm("service_u3lqth5", "template_vqi5scb", this)
       .then(() => alert("Message sent successfully!"))
       .catch((error) => console.error("Failed to send:", error));
+      emailjs.send("service_u3lqth5","template_vqi5scb",{
+        from_name: "",
+        from_email: "",
+});
   });
 
 
