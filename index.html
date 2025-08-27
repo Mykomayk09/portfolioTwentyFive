@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="logo.png">
+    <link rel="icon" href="img/logo.png">
     <title>Maic | Portfolio</title>
 </head>
 <body>
     <header id="main-header">
         <nav class="container">
-            <div class="logo"> <a href="#home_section"><img src="logo1.png" width="50px" alt=""></a></div>
+            <div class="logo"> <a href="#home_section"><img src="img/logo1.png" width="50px" alt=""></a></div>
             <div class="name"></div>
             <div class="home"><a href="#home_section"><button id="home" class="hover-btn">HOME</button></a></div>
             <div class="about"><button id="about" class="hover-btn">ABOUT</button></div>
@@ -119,13 +119,15 @@ document.body.innerHTML = createCard("Hello, User!",
         <h2>Get in Touch</h2>
         <p>I’m open to junior frontend roles, freelance projects, and collaboration. Send a message and I’ll reply as soon as I can.</p>
         <form id="contact-form">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your email" required>
-            <textarea name="message" placeholder="Your message"></textarea>
-            <button type="submit">Send</button>
+        <input type="text" name="from_name" placeholder="Your name" required>
+        <input type="email" name="from_email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send</button>
         </form>
 
+
     </section>
+    <script src="https://apis.google.com/js/api.js"></script>
     <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-js.min.js"></script>
@@ -135,8 +137,4 @@ document.body.innerHTML = createCard("Hello, User!",
     <p>@Copyright</p><span id="year"></span>
 </footer>
 <script src="script.js"></script>
-
 </html>
-
-
-

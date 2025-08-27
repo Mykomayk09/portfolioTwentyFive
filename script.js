@@ -35,12 +35,7 @@ document.getElementById('year').textContent = currentYear;
     e.preventDefault();
     emailjs.sendForm("service_u3lqth5", "template_vqi5scb", this)
       .then(() => alert("Message sent successfully!"))
-      .catch((error) => console.error("Failed to send", error));
-  });nt.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    emailjs.sendForm("service_u3lqth5", "template_vqi5scb", this)
-      .then(() => alert("Message sent successfully!"))
-      .catch(() => alert("Failed to send. Please try again."));
+      .catch((error) => console.error("Failed to send:", error));
   });
 
 
