@@ -115,16 +115,24 @@ document.body.innerHTML = createCard("Hello, User!",
             </div>
         </div>
     </section>
-    <section>
+    <section class="forms">
         <h2>Get in Touch</h2>
         <p>I’m open to junior frontend roles, freelance projects, and collaboration. Send a message and I’ll reply as soon as I can.</p>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+
     </section>
+    <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-js.min.js"></script>
 
 </body>
 <footer>
-    <p>@Copyright</p>
+    <p>@Copyright</p><span id="year"></span>
 </footer>
 <script src="script.js"></script>
 </html>

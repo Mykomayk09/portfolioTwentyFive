@@ -7,29 +7,6 @@ const toggleBtn = document.getElementById('toggle')
         document.body.classList.toggle('light-mode');
     });
 
-
-//hovering the header section
-function addHoverEffect(element, hoverColor, secondaryColor, defaultColor,defaultColor1) {
-    if(document.body.classList.toggle('dark-mode')){
-        element.addEventListener("mouseover", () => {
-        element.style.color = hoverColor;
-    });
-    element.addEventListener("mouseout", () => {
-        element.style.color = defaultColor;
-    });
-    }else if(document.body.classList.toggle('light-mode')){
-        element.addEventListener("mouseover", () => {
-        element.style.color = secondaryColor;
-    });
-        element.addEventListener("mouseout", () => {
-        element.style.color = defaultColor1;
-    });
-    }
-}
-document.querySelectorAll(".hover-btn").forEach(btn => {
-   addHoverEffect(btn, "#4c72f8", "#0f172a", "#7778a4","#283a69e6");
-});
-
 //transparent header when its scrolled down
 window.addEventListener('scroll', () => {
     const header = document.getElementById('main-header');
@@ -40,29 +17,38 @@ window.addEventListener('scroll', () => {
     }
 })
 
-//hover underline in every title of section
-
 function underlineHover(element, color1, color2){
-    
+    if(document.body.scrollTop > 50){
+
+    }
 }
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
+document.getElementById('year').textContent = currentYear;
 
-//https://prismic.io/blog/css-hover-effects
+(function(){
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+      .then(() => alert("Message sent successfully!"))
+      .catch(() => alert("Failed to send. Please try again."));
+  });
 
 
-// function addHoverEffect(element) {
-//     element.addEventListener("mouseover", () => {
-//         if (document.body.classList.contains("dark-mode")) {
-//             element.style.color = "#ffcc00"; // hover color for dark
-//         } else {
-//             element.style.color = "#4c72f8"; // hover color for light
-//         }
-//     });
-//     element.addEventListener("mouseout", () => {
-//         if (document.body.classList.contains("dark-mode")) {
-//             element.style.color = "#dddddd"; // default for dark
-//         } else {
-//             element.style.color = "#7778a4"; // default for light
-//         }
-//     });
-// }
-// document.querySelectorAll(".hover-btn").forEach(addHoverEffect);
+
+
+// const homeSection = document.getElementsByClassName('Home_page_padding');
+// const aboutSection = document.getElementsByClassName('about_me');
+// const aboutBtn = document.getElementById('about');
+//     aboutBtn.addEventListener('click', () => {
+//         homeSection.style.display = "none";
+//         aboutSection.style.display = "block";
+//     })
+
+//hamburger icon
+//if(window.resizeTo < 768){
+//element.classList.display=""}
+//hover underline in every title of section
