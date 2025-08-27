@@ -40,7 +40,7 @@ function initClient() {
 
   gapi.load("client:auth2", initClient);
 (function(){
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("A6DBNVW06kfSpH3tW");
   })();
 
   document.getElementById("contact-form").addEventListener("submit", function(e) {
