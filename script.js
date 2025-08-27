@@ -45,7 +45,7 @@ function initClient() {
 
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
-    emailjs.sendForm("service_u3lqth5", "YOUR_TEMPLATE_ID", this)
+    emailjs.sendForm("service_u3lqth5", "template_vqi5scb", this)
       .then(() => alert("Message sent successfully!"))
       .catch(() => alert("Failed to send. Please try again."));
   });
