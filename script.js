@@ -26,13 +26,26 @@ const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 document.getElementById('year').textContent = currentYear;
 
+
+function initClient() {
+    gapi.client.init({
+      apiKey: "YOUR_API_KEY",
+      clientId: "348033447317-08j2grfjtpfokp6vpehtsj63gae4nq29.apps.googleusercontent.com",
+      scope: "https://www.googleapis.com/auth/gmail.send",
+      discoveryDocs: ["https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest"]
+    }).then(() => {
+      // Now you can sign in and send emails
+    });
+  }
+
+  gapi.load("client:auth2", initClient);
 (function(){
     emailjs.init("YOUR_PUBLIC_KEY");
   })();
 
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    emailjs.sendForm("service_u3lqth5", "YOUR_TEMPLATE_ID", this)
       .then(() => alert("Message sent successfully!"))
       .catch(() => alert("Failed to send. Please try again."));
   });
