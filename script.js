@@ -30,16 +30,16 @@ document.getElementById('year').textContent = currentYear;
 (function(){
     emailjs.init("A6DBNVW06kfSpH3tW"); // Your Public Key
   })();
-    document.getElementById("contact-form").addEventListener("submit" () =>{
-              document.getElementById("from_name").value ="";
-              document.getElementById("from_email").value ="";
-    })
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
     emailjs.sendForm("service_u3lqth5", "template_ha0a0qw", this)
       .then(() => alert("Message sent successfully!"))
       .catch((error) => console.error("Failed to send:", error));
   });
+      document.getElementById("contact-form").addEventListener("submit" () =>{
+              document.getElementById("from_name").value ="";
+              document.getElementById("from_email").value ="";
+    })
 
 
 
@@ -57,6 +57,7 @@ document.getElementById('year').textContent = currentYear;
 //element.classList.display=""}
 
 //hover underline in every title of section
+
 
 
 
