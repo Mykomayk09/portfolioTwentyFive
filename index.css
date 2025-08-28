@@ -384,7 +384,7 @@ pre[class*="language-js"] {
 .proj{
     border: 2px solid var(--green);
     color: var(--primary_darklight_text);
-    background-image: url(img/bg.png);
+    background-image: url(bg.png);
     background-size: cover;
     border-radius: 7px;
     padding: 18px 20px;
@@ -522,3 +522,4 @@ pre[class*="language-js"] {
     background: none;
 }
 .badge:hover::after { opacity: 1; } */
+
