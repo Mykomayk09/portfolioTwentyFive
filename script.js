@@ -27,7 +27,7 @@ const currentYear = currentDate.getFullYear();
 document.getElementById('year').textContent = currentYear;
 
 
-function(){
+(function(){
     emailjs.init("A6DBNVW06kfSpH3tW"); // Your Public Key
   })();
 
@@ -54,4 +54,5 @@ function(){
 //element.classList.display=""}
 
 //hover underline in every title of section
+
 
