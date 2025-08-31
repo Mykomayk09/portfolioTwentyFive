@@ -194,7 +194,7 @@ pre[class*="language-js"] {
 .title > h1{
     margin-top: 1%;
     font-size: 45px;
-    max-width: 50%;
+    max-width: 70%;
     font-family: var(--primary_font);
     color: var(--h1_title_darkmode);
 }
@@ -204,7 +204,7 @@ pre[class*="language-js"] {
     margin-top: 1%;
     font-weight: 300;
     font-family: var(--primary_font);
-    max-width: 70%;
+    max-width: 50%;
     color: var(--primary_darklight_text);
 }
 .title > h6{
@@ -586,6 +586,7 @@ footer .footer{
     color: #122cc1;
     }
 }
+
 
 
 
