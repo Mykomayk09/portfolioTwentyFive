@@ -75,7 +75,7 @@ pre[class*="language-js"],
 pre[class*="language-js"] {
     background-color:#030d22;
     color: #ff1be3;
-    margin-top: -15%;
+    margin-top: -25%;
     margin-inline-start: -10%;
     font-family: "Fira Code", monospace;
     font-size: 0.95rem;
@@ -586,6 +586,7 @@ footer .footer{
     color: #122cc1;
     }
 }
+
 
 
 
