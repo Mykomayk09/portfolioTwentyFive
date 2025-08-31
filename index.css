@@ -75,6 +75,7 @@ pre[class*="language-js"],
 pre[class*="language-js"] {
     background-color:#030d22;
     color: #ff1be3; /**#ffd400 - yellow **//**#ff2e97 - pink1(variable and classlist) #030d22 - blue(tags) #032ba8 - comments**/
+    margin-inline-start: -10%;
     font-family: "Fira Code", monospace;
     font-size: 0.95rem;
     border-radius: 12px;
@@ -192,23 +193,25 @@ pre[class*="language-js"] {
 .title > h1{
     margin-top: 1%;
     font-size: 45px;
-    width: 70%;
+    max-width: 50%;
     font-family: var(--primary_font);
     color: var(--h1_title_darkmode);
 }
 .title p{
     font-size: 20px;
+    line-height: 2.0rem;
     margin-top: 1%;
-    font-weight: 400;
+    font-weight: 300;
     font-family: var(--primary_font);
-    width: 55%;
+    max-width: 50%;
     color: var(--primary_darklight_text);
 }
 .title > h6{
     margin-top: 10%;
+    margin-inline-end:3%;
     font-size: 100px;
     font-family: var(--primary_font);
-    color: #c2bad214;
+    color: #c2bad203;
     text-align: end;
 }
 
@@ -384,7 +387,7 @@ pre[class*="language-js"] {
 .proj{
     border: 2px solid var(--green);
     color: var(--primary_darklight_text);
-    background-image: url(bg.png);
+    background-image: url(img/bg.png);
     background-size: cover;
     border-radius: 7px;
     padding: 18px 20px;
@@ -423,6 +426,90 @@ pre[class*="language-js"] {
 .proj:hover {
     opacity: 0.2;
     color: var(--green);
+}
+.forms h2{
+    margin-inline-start: 10%;
+    color: var(--h1_title_darkmode);
+    line-height: 95px;
+    font-size: 70px;
+    font-family: var(--primary_font);
+}
+.forms p{
+    margin-inline-start: 10%;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 300;
+    font-family: var(--primary_font);
+    width: 40%;
+    color: var(--primary_darklight_text);
+}
+.form {
+    margin-top: -8%;
+    margin-inline-start: 56%;
+    padding: 1.5rem; /* p-6 */
+    max-width: 35%;
+    border-radius: 1rem; /* rounded-2xl */
+    border: 1px solid var(--green); /* border (default gray-200) */
+}
+
+form > * + * {
+    margin-top: 1rem; /* space-y-4 */
+    font-family: var(--primary_font);
+}
+
+label {
+  display: block; /* block */
+}
+
+label span {
+  border: 1px solid var(--green);
+  font-size: 0.875rem; /* text-sm */
+  line-height: 1.25rem;
+}
+
+input,
+textarea {
+  margin-top: 0.25rem; /* mt-1 */
+  display: block; /* block */
+  width: 96%; /* w-full */
+  background-color: #030d22;
+  border: none;
+  color: var(--primary_darklight_text);
+  border-radius: 0.375rem; /* rounded-md */
+  padding: 0.5rem 0.75rem; /* Tailwind default input padding */
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: var(--primary_font);
+}
+
+textarea {
+  min-height: calc(1.5rem * 4); /* rows={4} */
+}
+.form button {
+  border: 1px solid;
+  padding: 0.5rem 1rem; /* px-4 py-2 */
+  border-radius: 0.375rem; /* rounded-md */
+  background-color: transparent; /* bg-sky-600 */
+  color: var(--green); /* text-white */
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--primary_font);
+}
+.form button:hover {
+  border: 1px solid transparent;
+  background-color: var(--green); /* bg-sky-600 */
+  color: var(--h1_title_lightmode); /* text-white */
+
+}
+footer{
+    margin-top: 11rem;
+}
+footer .footer{
+    background-color: var(--primary_bg_light);
+    padding: 3rem;
+    font-size: 20px;
+    color: var(--h1_title_darkmode);
 }
 .light-mode{
     background-color: var(--dark_light);
@@ -498,28 +585,3 @@ pre[class*="language-js"] {
     color: #122cc1;
     }
 }
-
-
-
-
-/*.badge::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    bottom: -2.5rem;
-    background: #1e293b;
-    color: #fff;
-    padding: 0.4rem 0.7rem;
-    border-radius: 6px;
-    font-size: 0.75rem;
-    opacity: 0;
-    transform: translateY(10px);
-    pointer-events: none;
-    transition: all 0.3s;
-}
-.badge:hover {
-    transform: translateY(-3px);
-    color: var(--green);
-    background: none;
-}
-.badge:hover::after { opacity: 1; } */
-
