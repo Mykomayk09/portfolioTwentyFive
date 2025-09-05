@@ -27,9 +27,8 @@ const currentYear = currentDate.getFullYear();
 document.getElementById('year').textContent = currentYear;
 
 
-(function(){
-    emailjs.init("A6DBNVW06kfSpH3tW");
-  })();
+
+ emailjs.init("A6DBNVW06kfSpH3tW");
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
     emailjs.sendForm("service_u3lqth5", "template_ha0a0qw", this)
@@ -53,6 +52,7 @@ document.getElementById('year').textContent = currentYear;
 //element.classList.display=""}
 
 //hover underline in every title of section
+
 
 
 
