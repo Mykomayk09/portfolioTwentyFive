@@ -28,7 +28,7 @@ document.getElementById('year').textContent = currentYear;
 
 
 (function(){
-    emailjs.init("A6DBNVW06kfSpH3tW"); // Your Public Key
+    emailjs.init("A6DBNVW06kfSpH3tW");
   })();
   document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -53,6 +53,7 @@ document.getElementById('year').textContent = currentYear;
 //element.classList.display=""}
 
 //hover underline in every title of section
+
 
 
 
