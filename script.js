@@ -24,7 +24,7 @@ function underlineHover(element, color1, color2){
 }
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
-document.getElementById('year').textContent = `©${currentYear} All Rights Reserved.`;
+document.getElementById('year').textContent = `©${currentYear} All Rights Reserved. Built By: Maico Kristel Candol — Frontend Developer`;
 
 
 (function(){
@@ -53,6 +53,7 @@ document.getElementById('year').textContent = `©${currentYear} All Rights Reser
 //element.classList.display=""}
 
 //hover underline in every title of section
+
 
 
 
