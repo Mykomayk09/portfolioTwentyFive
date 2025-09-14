@@ -473,7 +473,7 @@ input,
 textarea {
   margin-top: 0.25rem;
   display: block;
-  width: 100%;
+  width: 96%;
   background-color: #030d22;
   border: none;
   color: var(--primary_darklight_text);
@@ -586,6 +586,7 @@ footer .footer{
     color: #122cc1;
     }
 }
+
 
 
 
