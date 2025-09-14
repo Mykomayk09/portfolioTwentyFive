@@ -24,7 +24,7 @@ function underlineHover(element, color1, color2){
 }
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
-document.getElementById('year').textContent = currentYear;
+document.getElementById('year').textContent = `©${currentYear} All Rights Reserved.`;
 
 
 (function(){
@@ -53,6 +53,7 @@ document.getElementById('year').textContent = currentYear;
 //element.classList.display=""}
 
 //hover underline in every title of section
+
 
 
 
