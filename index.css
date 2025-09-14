@@ -510,7 +510,7 @@ footer{
 footer .footer{
     background-color: var(--primary_bg_light);
     padding: 1rem;
-    font-size: 12px;
+    font-size: 15px;
     color: var(--h1_title_darkmode);
 }
 .light-mode{
@@ -587,6 +587,7 @@ footer .footer{
     color: #122cc1;
     }
 }
+
 
 
 
